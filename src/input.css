@@ -1,1 +1,29 @@
 @import "tailwindcss";
+
+.product {
+    @apply bg-gray-800 p-10 md:m-10 md:rounded-2xl md:shadow-sm text-center;
+}
+
+.h1-product {
+    @apply text-2xl text-white font-serif font-bold mb-6;
+}
+
+.article {
+    @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6;
+}
+
+.a-div {
+    @apply bg-amber-200 text-blue-800 font-bold p-4 rounded-xl shadow hover:scale-105 transition cursor-pointer;
+}
+
+.img-class {
+    @apply w-32 h-32 mx-auto object-cover rounded-md mt-2;
+}
+
+.cart-section {
+    @apply bg-gray-800 p-10 md:m-10 md:rounded-2xl md:shadow-sm text-center;
+}
+
+.cart-div {
+    @apply bg-amber-200 text-emerald-900 font-bold p-5 rounded-xl shadow-md;
+}

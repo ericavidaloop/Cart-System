@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Cart System</title>
+  <link rel="stylesheet" href="src/output.css">
+  <link rel="shortcut icon" href="image/cart-icon.jpg" type="image/x-icon">
+</head>
+<body class="bg-gray-900 text-white">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-indigo-950 p-4">
+    <h1 class="text-xl font-bold text-center">🛒Accesories Cart System</h1>
+  </header>
+
+  <!-- Product Section -->
+  <main id="main">
+    <section class="product">
+      <h1 class="h1-product">Products</h1>
+
+      <article class="article">
+        <!-- Necklace -->
+        <div class="a-div" onclick="addToCart(1200)">
+          <h3 class="text-lg font-semibold">Necklace</h3>
+          <img src="image/necklace.webp" class="img-class" alt="Necklace">
+          <p class="italic mt-2 text-sm text-gray-700">Antique Gold Peacock Necklace</p>
+          <p class="mt-2 text-emerald-800 font-semibold">₱1200.00</p>
+        </div>
+
+        <!-- Bracelet -->
+        <div class="a-div"
+             onclick="addToCart(800)">
+          <h3 class="text-lg font-semibold">Bracelet</h3>
+          <img src="image/bracelet.jpg" class="img-class" alt="Bracelet">
+          <p class="italic mt-2 text-sm text-gray-700">Brass Metal Pendant Bracelet</p>
+          <p class="mt-2 text-emerald-800 font-semibold">₱800.00</p>
+        </div>
+
+        <!-- Earrings -->
+        <div class="a-div"
+             onclick="addToCart(950)">
+          <h3 class="text-lg font-semibold">Earrings</h3>
+          <img src="image/earings.webp" class="img-class" alt="Earrings">
+          <p class="italic mt-2 text-sm text-gray-700">Elegant bridal hair accessories</p>
+          <p class="mt-2 text-emerald-800 font-semibold">₱950.00</p>
+        </div>
+
+        <div class="a-div"
+             onclick="addToCart(950)">
+          <h3 class="text-lg font-semibold">Rings</h3>
+          <img src="image/rings.webp" class="img-class" alt="Earrings">
+          <p class="italic mt-2 text-sm text-gray-700">Engagement rings and Wedding band inspiration</p>
+          <p class="mt-2 text-emerald-800 font-semibold">₱1,300.00</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- Cart Section -->
+    <section class="cart-section">
+      <div class="cart-div">
+        <h2 class="text-xl mb-3">🛍️ Cart</h2>
+        <p class="text-lg">Total: <span id="cartTotal" class="text-blue-800">₱0</span></p>
+      </div>
+    </section>
+  </main>
+  <script src="Vcart.js"></script>
+</body>
+</html>
